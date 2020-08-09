@@ -1,7 +1,9 @@
 package com.sih.todolist_room
 
+import androidx.room.Entity
 import androidx.room.PrimaryKey
 
+@Entity
 data class TodoModel(
     var title:String,
     var description:String,
@@ -12,3 +14,5 @@ data class TodoModel(
     @PrimaryKey(autoGenerate = true)
     var id: Long = 0
 )
+
+//Kotlin we have named arguments....
